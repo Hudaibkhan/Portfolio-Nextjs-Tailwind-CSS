@@ -1,101 +1,47 @@
+"use client";
 import Image from "next/image";
+import "./globals.css";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+    <div className=" md:flex-row flex items-center justify-center md:justify-around h-screen gap-5 p-5 flex-col-reverse">
+      <div className="flex flex-col gap-[10px] md:items-start items-center justify-start xs:justify-center">
+        <h3 className="font-bold text-lg">Hello, It&apos;s me</h3>
+        <h1 className="font-bold md:text-[40px] xs:text-[32px] text-2xl text-center xs:text-start font-[cursive,'Times_New_Roman',_Times,_serif]">Hudaib Khan</h1>
+        <h2 className="text-[2rem] font-[cursive_'Times_New_Roman',_Times,_serif] border-r-[4px_solid_black] overflow-hidden whitespace-nowrap  animate-[typing_3s_steps(30)_1s_infinite,_blink_0.75s_step-end_infinite] font-bold">And I am a <span className="text-[rgb(23,_84,_218)]">Developer</span></h2>
+        <p className="flex md:text-base pt-[10px] md:pt-[0px] text-center md:text-start xs:text-start md:justify-center text-xs xs:text-sm">I, am passionate software engineer student and a future AI developer</p>
+        <div className="flex md:pt-5 pt-[0px] gap-[15px]">
+          <a href="https://www.linkedin.com/in/hudaib-khan-383b21330/" target="_blank">
+          <Image
+          src="/linkedin-logo.png"
+          alt="Linkedin Logo"
+          width={38}
+          height={40}/>
           </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+          <a href="https://github.com/Hudaibkhan" target="_blank">
+          <Image
+          src="/github-logo.png"
+          alt="github Logo"
+          width={62}
+          height={40}/>
+          </a>
+          <a href="https://www.npmjs.com/~hudaib" target="_blank">
+          <Image
+          src="/npm-logo.avif"
+          alt="npm Logo"
+          width={63}
+          height={40}/>
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <div className="flex xs:items-start items-center">
+        <Image
+        src="/profile-image.jpeg"
+        alt ="Profile Image"
+        width={400}
+        height={450}
+        className="rounded-full w-[120px] h-auto sm:w-[150px] md:w-[300px] lg:w-[400px] xl:w-[400px] [box-shadow:0px_0px_20px_gray]"/>
+      </div>
     </div>
   );
 }
